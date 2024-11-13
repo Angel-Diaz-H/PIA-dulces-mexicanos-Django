@@ -1,0 +1,200 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="En este sitio encontrarás información acerca de los dulces típicos de México">
+    <meta name="author" content="Angel Díaz">
+    <meta name="keywords" content="dulces, mexico, mexicanos, cultura, costumbres">
+    <link rel="stylesheet" href="{% static 'myApp/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'myApp/fonts.css' %}">
+    <title>Dulces mexicanos</title>
+    <style>
+        .dark-mode {
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dulces típicos mexicanos.</h1>
+        <p style="font-weight: bold;">Aquí encontrarás información acerca de los dulces más comunes en <b>México.</b></p>
+        <blockquote>
+            <cite class="frase">"Los dulces mexicanos son la expresión más pura de nuestras emociones; llevan en su sabor la esencia de nuestras tradiciones y el alma de nuestro pueblo."</cite>
+            <pre>    -Laura Esquivel</pre>
+        </blockquote>
+        <p>Haz <i>clic</i> en los enlaces para conocer más acerca de los dulces.</p>
+        <ol class="listas-ol">
+            <p hidden>Páginas.</p>
+            <li><a href="{% static 'myApp/cajeta.html' %}">Cajetas</a></li>
+            <li><a href="{% static 'myApp/cocada.html' %}">Cocadas</a></li>
+            <li><a href="{% static 'myApp/mazapan.html' %}">Mazapanes</a></li>
+            <li><a href="{% static 'myApp/palanqueta.html' %}">Palanquetas</a></li>
+        </ol>
+        <button onclick="mostrarAlerta()">Bienvenida</button>
+        <button onclick="toggleDarkMode()">Modo oscuro</button>
+        <script>
+            function mostrarAlerta() {
+                alert('¡Hola! Bienvenid@ a nuestra página web.');
+            }
+            function toggleDarkMode() {
+                document.body.classList.toggle('dark-mode');
+            }
+        </script>
+    </header>
+    <main>
+        <section id="historia">
+            <hr>
+            <h2>1️⃣Introducción.</h2>
+            <p>Los dulces mexicanos son una parte fundamental de la cultura y gastronomía de México, con una historia que se remonta a la época prehispánica. Estos dulces reflejan la rica diversidad del país, combinando influencias indígenas, europeas, y africanas para crear una variedad única de sabores y texturas.</p>
+            <hr>
+            <h2>2️⃣Historia de los dulces mexicanos.</h2>
+            <article id="epocas" class="c-epocas">
+                <h3>Época prehispánica.</h3>
+                <p>En la época prehispánica, las culturas indígenas utilizaban ingredientes naturales como <em>el maíz, el cacao, la miel, y diversas frutas para crear preparaciones dulces</em>. El cacao, en particular, era muy valorado y se utilizaba tanto en bebidas como en algunas preparaciones especiales. La miel de abeja melipona (una especie nativa sin aguijón) era el principal endulzante, junto con la savia de maguey.</p>
+                <img width="200" src="{% static 'myApp/imgs/epoca-prehispanica.jpg' %}" alt="Época prehispánica">
+                <h3>Influencia colonial.</h3>
+                <p>Con la llegada de los españoles en el siglo XVI, se introdujeron nuevos ingredientes y técnicas europeas, como <em>el azúcar de caña, la leche, el trigo, y las frutas europeas</em>. Estos ingredientes se mezclaron con los ya existentes en Mesoamérica, dando lugar a nuevas preparaciones y al nacimiento de muchos dulces tradicionales. Los conventos desempeñaron un papel crucial en el desarrollo de la repostería mexicana, donde las monjas experimentaban y creaban recetas que combinaban sabores indígenas con los nuevos ingredientes.</p>
+                <img width="200" src="{% static 'myApp/imgs/influencia-colonial.jpg' %}" alt="Influencia colonial">
+                <h3>Evolución y diversificación.</h3>
+                <p>A lo largo de los siglos, los dulces mexicanos continuaron evolucionando, adaptándose a las regiones y utilizando ingredientes locales. En cada estado de México, se desarrollaron dulces típicos que reflejan la biodiversidad y la cultura de la región, desde los <em>frutos secos y semillas en el norte, hasta el cacao y el coco en el sur</em>.</p>
+                <p>Los mercados y las festividades también han jugado un papel importante en la preservación y popularización de estos dulces. En muchas festividades religiosas y culturales, los dulces mexicanos son protagonistas, como en el <em>Día de los Muertos</em>, donde se preparan y consumen una variedad de dulces que tienen un profundo significado simbólico.</p>
+                <img width="200" src="{% static 'myApp/imgs/actualidad.png' %}" alt="Actualidad">
+            </article>
+        </section>
+        <hr>
+        <section id="importancia">
+            <h2>3️⃣Importancia cultural</h2>
+            <p>Los dulces mexicanos no solo son un placer culinario, sino que también representan la historia y las tradiciones del país. Son un vínculo con el pasado y un testimonio de la fusión cultural que define a México. Desde las recetas transmitidas de generación en generación hasta las innovaciones modernas, los dulces mexicanos continúan siendo una parte esencial de la identidad mexicana.</p>
+        </section>
+        <hr>
+        <aside class="datosCuriosos">
+            <h2>4️⃣Datos curiosos</h2>
+            <ul>
+                <li>En algunos dulces tradicionales se usan conservantes como el ácido benzoico (C<sup>6</sup>H<sup>5</sup>COOH), el cual actúa como un agente antimicrobiano.</li>
+                <li>La fórmula química del azúcar (sacarosa) es C<sub>12</sub>H<sub>22</sub>O<sub>11</sub>.</li>
+            </ul>
+        </aside>
+        <hr>
+        <aside id="ejemplosDulces">
+            <h2>5️⃣Algunos&nbsp;ejemplos.</h2>
+            <p>Algunos de los dulces mexicanos más comunes son los siguientes:</p>
+            <table border="1" class="tablas">
+                <thead>
+                    <th>Nombres</th>
+                    <th>Ingredientes principales</th>
+                    <th>Región de origen</th>
+                    <th>Descripción</th>
+                </thead>
+                <tbody>
+                    <td>Cajetas</td>
+                    <td>Leche de cabra</td>
+                    <td>Celaya, Guanajuato</td>
+                    <td>Dulce de leche cremoso hecho con azúcar y leche.</td>
+                </tbody>
+                <tbody>
+                    <td>Cocadas</td>
+                    <td>Coco</td>
+                    <td>Costas de México</td>
+                    <td>Dulce de coco rallado y azúcar.</td>
+                </tbody>
+                <tbody>
+                    <td>Mazapanes</td>
+                    <td>Cacahuate</td>
+                    <td>Jalisco</td>
+                    <td>Dulce pulverizado de cacahuate y azúcar.</td>
+                </tbody>
+                <tbody>
+                    <td>Palanquetas</td>
+                    <td>Leche de cabra</td>
+                    <td>Celaya, Guanajuato</td>
+                    <td >Dulce de leche cremoso hecho con azúcar y leche.</td>
+                </tbody>
+                <tfoot>
+                    <td colspan="4">Derechos reservados &copy;</td>
+                </tfoot>
+            </table>
+        </aside>
+        <br>
+        <hr>
+        <section>
+            <h2>6️⃣Definiciones.</h2>
+            <dl>
+                <dt>Azúcar.</dt>
+                <dd>Un carbohidrato simple que se utiliza como endulzante en una amplia variedad de alimentos y bebidas. Es un ingrediente clave en la preparación de dulces y postres.</dd>
+                <figure>
+                    <img width="200" src="{% static 'myApp/imgs/azucar.jpg' %}" alt="Azucar">
+                    <figcaption>Azucar.</figcaption>
+                </figure>
+                
+                <dt>Leche de cabra.</dt>
+                <dd>Un tipo de leche producida por cabras, que se utiliza en la fabricación de quesos, yogures, y otros productos lácteos. Es conocida por ser más fácil de digerir que la leche de vaca para algunas personas.</dd>
+                <figure>
+                    <img width="200" src="{% static 'myApp/imgs/leche-de-cabra.png' %}" alt="Leche de cabra">
+                    <figcaption>Leche de cabra.</figcaption>
+                </figure>
+
+                <dt>Cacahuate.</dt>
+                <dd>Una legumbre originaria de América del Sur, también conocida como maní. Se utiliza en una variedad de alimentos, desde mantequillas hasta salsas y dulces, y es una fuente rica en proteínas y grasas saludables.</dd>
+                <figure>
+                    <img width="200" src="{% static 'myApp/imgs/cacahuate.jpg' %}" alt="Cacahuate">
+                    <figcaption>Cacahuate.</figcaption>
+                </figure>
+                
+                <dt>Día de Muertos.</dt>
+                <dd>Una tradición mexicana que se celebra el 1 y 2 de noviembre, donde se honra a los seres queridos que han fallecido. Incluye ofrendas, altares y comidas típicas como el pan de muerto.</dd>
+                <figure>
+                    <img width="200" src="{% static 'myApp/imgs/dia-de-muertos.png' %}" alt="Día de muertos">
+                    <figcaption>Día de muertos.</figcaption>
+                </figure>
+            </dl>  
+        </section>
+        <section>
+            <h2>*️⃣Queremos saber más de ti.</h2>
+            <p><mark>Rellena nuestro fomulario para recibir las últimas notificaciones de nuestra página web. &hearts;</mark></p>
+            <form class="formulario">
+                {% csrf_token %}
+                <fieldset id="formulario-">
+                    <label for="nombres">Nombres:</label>
+                    <input type="text" name="nombres" id="nombres" tabindex="1" required>
+                    
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" name="apellido" id="apellido" tabindex="2" required>
+                    
+                    <label for="correo-electronico">Correo electrónico:</label>
+                    <input type="email" name="correo-electronico" id="correo-electronico" tabindex="3" required>
+                    
+                    <label for="fecha-nacimiento">Fecha de nacimiento:</label>
+                    <input type="date" name="fecha-nacimiento" id="fecha-nacimiento" tabindex="4" required>
+                    
+                    <label for="archivo">Sube tu foto de perfil:</label>
+                    <input type="file" name="archivo" id="archivo" tabindex="5" required>
+                    
+                    <input type="submit" value="Enviar">
+                </fieldset>
+            </form>
+        </section>
+        <br>
+        <hr>
+        <br>
+        <p id="negrita">Si deseas investigar más sobre los dulces mexicanos, te sugerimos leer:</p>
+        <embed width="600" src="http://web.uaemex.mx/identidad/docs/cronicas/TOMO%20IX/Jaime%20y%20Norma%202011%20Durango.pdf" type="application/pdf">
+        <p id="negrita">Reproduce música aquí:</p>
+        <audio controls src="{% static 'myApp/mp3/sound.mp3' %}"></audio>
+    </main>
+    <footer>
+        <div class="div-footer"> Información de contacto:</div>
+        <address class="address">
+            <strong><span style="color: rgb(3, 3, 104);">Universidad Autónoma de Nuevo León</span>&#128047;</strong><br>
+            Pedro de Alba S/N, Niños Héroes, Ciudad Universitaria, 66455 San Nicolás de los Garza, N.L. México.<br>
+            <a href="mailto:angel.diazhrn@uanl.edu.mx">angel.diazhrn@uanl.edu.mx</a><br>
+            Teléfono de la <abbr title="Universidad Autónoma de Nuevo León">UANL </abbr>+52 8183294000
+            <p id="p-address">Página creada el <time datetime="2024-08-25">25 de agosto de 2024</time>.</p>
+            <p id="p-address2"><small>&copy; 2024 Angel Díaz <abbr title="Licenciatura en Tecnologías de Información">LTI</abbr>. Todos los derechos reservados.</small></p>
+        </address>
+    </footer>
+</body>
+</html>

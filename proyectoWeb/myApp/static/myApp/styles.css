@@ -1,0 +1,103 @@
+p {
+    font-family: poppins-regular;
+    font-size: 12px;
+}
+
+#negrita {
+    font-family: poppins-black;
+    font-size: 13px;
+}
+
+h1 {
+    font-family: poppins-black;
+    font-size: 30px;
+    color: rgb(0, 77, 26);
+}
+
+h2 {
+    font-family: poppins-black;
+    font-size: 20px;
+    color: rgb(0, 13, 79);
+    background-color: rgb(210, 248, 211);
+}
+
+h3 {
+    font-family: poppins-black;
+    font-size: 16px;
+    color: rgb(0, 77, 26);
+}
+
+.frase {
+    font-size: poppins-italic;
+    font-size: 14px;
+    color: rgb(0, 13, 79);
+}
+
+pre {
+    font-family: poppins-regular;
+    font-size: 12px;
+}
+
+.datosCuriosos {
+    font-family: poppins-regular;
+    font-size: 12px;
+}
+
+ol {
+    font-family: poppins-regular;
+    font-size: 12px;
+}
+
+ul {
+    font-family: poppins-regular;
+    font-size: 12px;
+}
+
+.tablas {
+    font-family: poppins-regular;
+    font-size: 12px;
+}
+
+dt {
+    font-family: poppins-black;
+    font-size: 14px;
+}
+
+dd {
+    font-family: poppins-regular;
+    font-size: 12px;
+}
+
+figcaption {
+    font-family: poppins-regular;
+    font-size: 10px;
+}
+
+.formulario {
+    font-family: poppins-regular;
+    font-size: 12px;   
+}
+
+.div-footer {
+    font-family: poppins-black;
+    font-size: 13px;     
+}
+
+.address {
+    font-family: poppins-regular;
+    font-size: 11px;   
+}
+
+#p-address {
+    font-family: poppins-regular;
+    font-size: 9px; 
+}
+
+#p-address2 {
+    font-family: poppins-regular;
+    font-size: 9px; 
+}
+
+body {
+    background-color: rgb(241, 241, 241);
+}
